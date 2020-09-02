@@ -9,14 +9,11 @@
   padding: 4px;
   height: 40px;
   border: #f5f5f5 1px solid;
-}
-
-.form-control {
-  width: 100%;
+  margin: 1px 0;
 }
 
 .contact-form input:focus {
-  outline-color: #ffd700;
+  outline-color: rgba(18, 29, 35, 0.2);
 }
 
 .contact-form .btn {
@@ -24,11 +21,7 @@
   margin-top: 20px;
 }
 
-.wpcf7-submit {
-  background-color: #ffd700;
-}
-
-.wpcf7-form .wpcf7-submit:hover {
-  cursor: pointer;
-  background-color: #ffd900c4;
+#submit {
+  background-color: rgb(18, 29, 35);
+  color: #f7f7f7;
 }

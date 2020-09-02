@@ -143,7 +143,7 @@
 				<div class="column">
 					<div class="column-2 bg-light">
 						<h2>Get In Touch</h2>
-						<form action="" class="contact-form">
+						<form class="contact-form">
 							<div class="form-control">
 								<label for="name"></label>
 								<input type="text" name="name" id="name" placeholder="Enter Name">
@@ -156,7 +156,7 @@
 								<label for="phone"></label>
 								<input type="text" name="phone" id="phone" placeholder="Enter Phone">
 							</div>
-							<input type="submit" value="Send" id="submit" class="btn">
+							<input type="submit" value="Send" id="submit" class="btn" onclick="sendClick(event)">
 						</form> <!-- form end -->
 					</div> <!-- column-2 end -->
 				</div> <!-- column end -->
@@ -175,12 +175,8 @@
 	</main>
 
 	<footer class="footer bg-dark">
-		<!-- <div class="social">
-			<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-			<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-			<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-		</div> -->
-		<small>&copy; 2020 KTLO </small>
+		
+		<small>&copy; 2020 KeepTheLightsOn </small>
 
 		<!-- To Top Button -->
 		<button id="goTop" class="btn-top" onclick="toTop()">

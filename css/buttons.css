@@ -1,8 +1,4 @@
 /* Buttons */
-.hero .btn {
-  margin: 0px;
-}
-
 .btn {
   cursor: pointer;
   display: inline-block;

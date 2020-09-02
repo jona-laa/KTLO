@@ -50,3 +50,8 @@ const hasScrolled = () => {
 
     lastScrollTop = st;
 }
+
+const sendClick = (e) => {
+    e.preventDefault();
+    alert('This just a dummy site, Bud. Have a nice day! :)');
+}
