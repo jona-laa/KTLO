@@ -48,17 +48,14 @@
 .flex-columns h2 {
   font-size: 40px;
   font-weight: 100;
-  color: #333;
 }
 
 .flex-columns h4 {
   margin-bottom: 10px;
-  color: #333;
 }
 
 .flex-columns p {
   margin: 20px 0;
-  color: #333;
 }
 
 /* Flex grid */

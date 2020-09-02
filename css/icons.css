@@ -3,11 +3,6 @@
   padding: 30px;
 }
 
-.icons h3 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 .icons i {
   background-color: rgb(18, 29, 35);
   color: #fff;
@@ -16,32 +11,10 @@
   margin-bottom: 15px;
 }
 
-/* .icons .fa-js {
-  background-color: rgb(242, 219, 64); 
-  color: rgb(0, 0, 0);
-}
-
-.icons .fa-php {
-  background-color: rgb(127, 136, 179); 
-}
-
-.icons .fa-python {
-  background-color: rgb(248, 207, 80);
-  color:  rgb(60, 103, 152);
-} */
-
 i {
   color: rgb(18, 29, 35);
-
 }
 
-.ai img:hover {
-  opacity: 0.7;
-}
-
-/* Mobile */
-@media only screen and (max-width: 900px) {
-  .ai img {
-    width: 70%;
-  }
+i:hover {
+  opacity: 0.75;
 }
