@@ -90,19 +90,19 @@
   #main-menu-toggle {
     display: block;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 9px;
   }
 
   .main-menu {
-    text-align: center;
+    text-align: right;
     z-index: 100;
     width: 100%;
   }
 
   #menu-main-menu {
     z-index: 100;
-    margin-top: 50px;
+    margin-top: 60px;
     background-color: transparent;
   }
 
