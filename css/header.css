@@ -1,6 +1,6 @@
 /* Header */
 .hero {
-  background: url('../images/KTLO.jpg') no-repeat center center/cover;
+  background: url('../images/KTLO.jpg') no-repeat 15% center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
