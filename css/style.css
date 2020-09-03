@@ -19,7 +19,14 @@ ul {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 h1,
