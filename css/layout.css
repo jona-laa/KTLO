@@ -1,13 +1,16 @@
 /*  Flex Items */
 .flex-items {
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   height: 100%;
 }
 
-.flex-items>div {
+.flex-items div {
+  width: 33%;
+}
+
+.flex-items > div {
   padding: 20px;
 }
 
@@ -76,6 +79,10 @@
   .flex-items {
     flex-direction: column;
   }
+
+  /* .flex-items div {
+    width: 100%;
+  } */
 
   .flex-columns .column,
   .flex-grid .column {
