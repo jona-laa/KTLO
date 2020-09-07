@@ -66,8 +66,8 @@ const js = async () => {
 }
 
 // Images Task - Minify
-const images = async () => {
-  await src(path.images)
+const images = () => {
+  return src(path.images)
     .pipe(imageMin())
     .pipe(dest(`${path.dist}/images`))
 }
