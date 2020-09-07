@@ -34,8 +34,10 @@ Syftet med automatisering är att effektivisera utvecklingsprocessen genom att m
 En simpel koncept-webbplats, skapad med html, css och js.  
   
 Med hjälp av gulp tasks automatiserar jag skapandet av en distributionsmapp. Paketen, nämnda i listan ovan, används för att förflytta filer till denna mapp, men även för att minimera storleken av html, css och js filer, samt för att översätta ES6 kod till äldre syntax för att bredda webbläsarstödet.  
+
+Task för att minimera/komprimera bildfiler finns även.  
   
-Utöver detta finns tasks för att hålla reda på förändringar i källkoden, och för att automatiskt ladda om webbläsarfönstret då detta skett, vilket underlättar utvecklingsarbetet avsevärt, samt en task som raderar dist mappen innan en ny skapas(vid uppdateringar).  
+Utöver detta finns tasks för att hålla reda på förändringar i källkoden, och för att automatiskt ladda om webbläsarfönstret då detta skett, vilket underlättar utvecklingsarbetet avsevärt, samt en task som raderar dist mappen innan en ny skapas(vid uppdateringar).
 
 ### Användning  
 1. Klona: `git clone -b gulp https://github.com/jona-laa/jona-laa.github.io.git`
