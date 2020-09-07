@@ -39,7 +39,7 @@ Utöver detta finns tasks för att hålla reda på förändringar i källkoden, 
 
 ### Användning  
 1. Klona: `git clone -b gulp https://github.com/jona-laa/jona-laa.github.io.git`
-2. Navigera in i mapp: `cd jona-laa.github.io.git`
+2. Navigera in i mapp: `cd jona-laa.github.io`
 3. Installera: `npm i`  
 4. Skapa dist och kör Live Server: `gulp`
 
