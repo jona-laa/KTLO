@@ -38,6 +38,7 @@ Med hjälp av gulp tasks automatiserar jag skapandet av en distributionsmapp. Pa
 Utöver detta finns tasks för att hålla reda på förändringar i källkoden, och för att automatiskt ladda om webbläsarfönstret då detta skett, vilket underlättar utvecklingsarbetet avsevärt.  
   
 Klona: git clone https://github.com/jona-laa/ktlo-gulp.git  
+Byt branch: git checkout gulp
 Installera: npm i  
 Skapa dist och kör Live Server: gulp
 
