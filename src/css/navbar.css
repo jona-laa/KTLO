@@ -22,10 +22,6 @@
   border-bottom: #f7f7f7 2px solid;
 }
 
-.navbar a:visited {
-  color: #fff;
-}
-
 .navbar ul {
   display: flex;
 }

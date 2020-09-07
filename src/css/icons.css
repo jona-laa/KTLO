@@ -1,9 +1,5 @@
 /* Icons */
-.icons {
-  padding: 30px;
-}
-
-.icons i {
+#languages i {
   background-color: rgb(18, 29, 35);
   color: #fff;
   padding: 1rem;
@@ -15,6 +11,6 @@ i {
   color: rgb(18, 29, 35);
 }
 
-i:hover {
+.icon-link:hover {
   opacity: 0.75;
 }
