@@ -14,6 +14,10 @@
   padding: 20px;
 }
 
+.flex-items a:visited {
+  color: #272727 !important;
+}
+
 /* Flex Columns */
 .flex-columns .row {
   display: flex;
@@ -80,9 +84,9 @@
     flex-direction: column;
   }
 
-  /* .flex-items div {
+  .flex-items div {
     width: 100%;
-  } */
+  }
 
   .flex-columns .column,
   .flex-grid .column {
