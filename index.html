@@ -15,7 +15,6 @@
 
 <body id="home">
   <header class="hero">
-
     <div id="navbar" class="navbar top">
       <h1 class="logo">
         K<span class="logo-font_small">eep</span class="logo-font_small">T<span class="logo-font_small">he</span>L<span
@@ -45,21 +44,18 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <a href="#languages" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
     </div>
-
   </header>
   <main>
 
     <!-- skillset-1 section - Languages -->
-    <section id="languages" class="icons bg-light">
-
+    <section id="languages" class="flex-columns section-padding bg-light">
       <div class="section-header">
         <h2>Server-Side Languages</h2>
       </div>
 
       <div class="flex-items">
-
         <div>
-          <a href="https://nodejs.org/en/" target="_blank">
+          <a href="https://nodejs.org/en/" class="icon-link" target="_blank">
             <i class="fab fa-node-js fa-2x"></i>
             <h3>Node.js</h3>
           </a>
@@ -69,26 +65,25 @@
         </div>
 
         <div>
-          <a href="https://www.php.net/" target="_blank">
+          <a href="https://www.php.net/" class="icon-link" target="_blank">
             <i class="fab fa-php fa-2x"></i>
             <h3>PHP</h3>
           </a>
           <p>PHP is a popular general-purpose scripting language that is especially suited to web development.</p>
         </div>
         <div>
-          <a href="https://www.python.org/" target="_blank">
+          <a href="https://www.python.org/" class="icon-link" target="_blank">
             <i class="fab fa-python fa-2x"></i>
             <h3>Python</h3>
           </a>
           <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
         </div>
-      </div>
-
+      </div> <!-- flex-items end -->
     </section> <!-- languages section end -->
+
 
     <!-- pitch-1 section -->
     <section id="pitch-1" class="flex-columns bg-dark">
-
       <div class="row">
         <div class="column">
           <div class="column-1">
@@ -107,22 +102,21 @@
               dicta doloremque voluptates deleniti officiis iusto beatae delectus soluta, laborum optio ea
               ad ut
               provident recusandae?</p>
-          </div> <!-- column-2 end -->
-        </div> <!-- column end  -->
+          </div>
+        </div>
       </div> <!-- row end -->
-
     </section> <!-- pitch-1 section end -->
+
 
     <!-- skillset-2 section - Front-end Frameworks -->
     <section id="frameworks" class="flex-columns section-padding bg-light">
-
       <div class="section-header">
         <h2>Front-end Frameworks</h2>
       </div>
 
       <div class="flex-items">
         <div>
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://reactjs.org/" class="icon-link" target="_blank">
             <i class="fab fa-react fa-3x"></i>
             <h3>React</h3>
           </a>
@@ -132,7 +126,7 @@
         </div>
 
         <div>
-          <a href="https://angular.io/" target="_blank">
+          <a href="https://angular.io/" class="icon-link" target="_blank">
             <i class="fab fa-angular fa-3x"></i>
             <h3>Angular</h3>
           </a>
@@ -141,7 +135,7 @@
         </div>
 
         <div>
-          <a href="https://vuejs.org/" target="_blank">
+          <a href="https://vuejs.org/" class="icon-link" target="_blank">
             <i class="fab fa-vuejs fa-3x"></i>
             <h3>Vue</h3>
           </a>
@@ -150,7 +144,6 @@
             applications.</p>
         </div>
       </div> <!-- flex-items end -->
-
     </section> <!-- frameworks section end -->
 
     <!-- Contact -->
@@ -174,7 +167,7 @@
                 <input type="text" name="phone" id="phone" placeholder="Enter Phone">
               </div>
               <input type="submit" value="Send" id="submit" class="btn" onclick="sendClick(event)">
-            </form> <!-- form end -->
+            </form>
           </div> <!-- column-2 end -->
         </div> <!-- column end -->
 
