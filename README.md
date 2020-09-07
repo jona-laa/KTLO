@@ -38,10 +38,10 @@ Med hjälp av gulp tasks automatiserar jag skapandet av en distributionsmapp. Pa
 Utöver detta finns tasks för att hålla reda på förändringar i källkoden, och för att automatiskt ladda om webbläsarfönstret då detta skett, vilket underlättar utvecklingsarbetet avsevärt.  
 
 ### Användning  
-Klona: git clone -b gulp https://github.com/jona-laa/jona-laa.github.io.git
-Navigera in i mapp: cd jona-laa.github.io.git  
-Installera: npm i  
-Skapa dist och kör Live Server: gulp
+1. Klona: git clone -b gulp https://github.com/jona-laa/jona-laa.github.io.git  
+2. Navigera in i mapp: cd jona-laa.github.io.git  
+3. Installera: npm i  
+4. Skapa dist och kör Live Server: gulp
 
 ### Extra
 * Editorconfig - Standardiserar inställningar i VSC för bl.a indentering, preferens på " eller ', osv.
