@@ -42,18 +42,3 @@ p {
 img {
   width: 100%;
 }
-
-/* Background/Text sets */
-.bg-light {
-  background: #f7f7f7;
-  color: #272727;
-}
-
-.bg-dark {
-  background-color: rgb(18, 29, 35);
-  color: #f7f7f7;
-}
-
-.section-padding {
-  padding: 20px;
-}
