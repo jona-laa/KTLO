@@ -80,9 +80,9 @@
     flex-direction: column;
   }
 
-  /* .flex-items div {
+  .flex-items div {
     width: 100%;
-  } */
+  }
 
   .flex-columns .column,
   .flex-grid .column {
