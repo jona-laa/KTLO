@@ -36,9 +36,10 @@ En simpel koncept-webbplats, skapad med html, css och js.
 Med hjälp av gulp tasks automatiserar jag skapandet av en distributionsmapp. Paketen, nämnda i listan ovan, används för att förflytta filer till denna mapp, men även för att minimera storleken av html, css och js filer, samt för att översätta ES6 kod till äldre syntax för att bredda webbläsarstödet.  
   
 Utöver detta finns tasks för att hålla reda på förändringar i källkoden, och för att automatiskt ladda om webbläsarfönstret då detta skett, vilket underlättar utvecklingsarbetet avsevärt.  
-  
-Klona: git clone https://github.com/jona-laa/ktlo-gulp.git  
-Byt branch: git checkout gulp
+
+### Användning  
+Klona: git clone -b gulp https://github.com/jona-laa/jona-laa.github.io.git
+Navigera in i mapp: cd jona-laa.github.io.git  
 Installera: npm i  
 Skapa dist och kör Live Server: gulp
 
