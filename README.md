@@ -42,3 +42,5 @@ Utöver detta finns tasks för att hålla reda på förändringar i källkoden, 
 2. Navigera in i mapp: `cd jona-laa.github.io.git`
 3. Installera: `npm i`  
 4. Skapa dist och kör Live Server: `gulp`
+
+:v:
