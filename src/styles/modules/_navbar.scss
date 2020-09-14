@@ -10,38 +10,90 @@
   padding: 0 30px;
   transition: 0.5s ease-in;
 
-  a {
-    color: $color-light;
-    padding: 10px 20px;
-    margin: 0 5px;
-    font-size: $font-M;
+  @include maxWidth(900px) {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
 
-    &:hover {
-      border-bottom: $color-light 2px solid;
+  @include maxWidth(812px) {
+    flex-direction: row;
+    height: 70px;
+  }
+
+  /* Menu */
+  .main-menu {
+    @include maxWidth(812px) {
+      text-align: right;
+      z-index: 100;
+      width: 100%;
     }
 
-    &:visited {
-      color: $color-light;
+    ul {
+      display: flex;
+
+      @include minWidth(813px) {
+        display: flex !important;
+      }
+
+      @include maxWidth(812px) {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        margin-top: 50px;
+        background-color: transparent;
+      }
+
+      a {
+        color: $color-light;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: $font-M;
+
+        &:hover {
+          color: darken($color-light, 99%);
+          border-bottom: $color-light 2px solid;
+        }
+
+        &:visited {
+          color: $color-light;
+        }
+      }
+
+      li {
+        @include maxWidth(812px) {
+          background-color: rgba(0, 0, 0, 0.3);
+          display: block;
+          line-height: 3.8rem;
+        }
+      }
     }
   }
 
-  ul {
-    display: flex;
-  }
-
+  /* Logo */
   .logo {
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3.2rem;
+
+    .logo-font_small {
+      font-size: 2.6rem;
+    }
   }
 
-  .logo-font_small {
-    font-size: 2.6rem;
-  }
-}
+  #main-menu-toggle {
+    display: none;
 
-#main-menu-toggle {
-  display: none;
+    @include maxWidth(812px) {
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 15px;
+    }
+  }
 }
 
 /* Hides header on scroll down */
@@ -58,68 +110,4 @@
   animation-duration: 1s;
   animation-name: slide-up;
   top: -150px;
-}
-
-/* Mobile */
-@media only screen and (max-width: 900px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px;
-
-    a {
-      padding: 10px 10px;
-      margin: 0 3px;
-    }
-  }
-}
-
-/* Reset navbar display on resize */
-@media screen and (min-width: 813px) {
-  .main-menu ul {
-    display: flex !important;
-  }
-}
-
-/*  < iPhone X landscape */
-@media screen and (max-width: 812px) {
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-  }
-
-  #main-menu-toggle {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 9px;
-  }
-
-  .main-menu {
-    text-align: right;
-    z-index: 100;
-    width: 100%;
-
-    ul {
-      display: none;
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-    }
-  }
-
-  #menu-main-menu {
-    z-index: 100;
-    margin-top: 50px;
-    background-color: transparent;
-
-    li {
-      background-color: rgba(0, 0, 0, 0.3);
-      display: block;
-      line-height: 3.8rem;
-    }
-  }
 }
