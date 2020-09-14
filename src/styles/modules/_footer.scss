@@ -1,0 +1,17 @@
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 150px;
+  padding: $padding-div;
+  text-align: center;
+
+  a {
+    font-size: $font-M;
+  }
+
+  small {
+    font-size: $font-XS;
+  }
+}

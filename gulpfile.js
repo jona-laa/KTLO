@@ -26,8 +26,8 @@ const mergeStream = require('merge-stream');
 /* ----- FILE PATHS ----- */
 const path = {
   html: 'src/**/*.html',
-  css: 'src/styles/*.css',
-  scss: 'src/styles/*.scss',
+  css: 'src/styles/**/*.css',
+  scss: 'src/styles/**/*.scss',
   js: 'src/js/*.js',
   images: 'src/images/*',
   dist: 'dist'
@@ -90,6 +90,12 @@ const images = () => {
     .pipe(dest(`${path.dist}/images`))
 }
 
+// Favicon Task
+const favicon = () => {
+  return src('src/favicon.ico')
+    .pipe(dest(path.dist))
+}
+
 // File watch - Reload browser on file changes
 const watcher = async () => {
   await watch(path.html).on('change', series(html, browserSync.reload))
@@ -110,7 +116,7 @@ const server = async () => {
 
 exports.default = series(
   cleanDist,
-  parallel(html, styles, js, images),
+  parallel(html, styles, js, images, favicon),
   server,
   watcher
 );

@@ -13,11 +13,20 @@ a:hover {
 h1,
 h2 {
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 4.2rem;
+}
+
+h3 {
+  font-size: $font-L;
 }
 
 p {
   margin: 10px 0;
+  font-size: $font-M;
+}
+
+.pre-header {
+  font-size: $font-S;
 }
 
 .flex-columns h2 {

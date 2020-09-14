@@ -63,17 +63,17 @@
 
 /* Background/Text sets */
 .bg-light {
-  background: #f7f7f7;
-  color: #272727;
+  background: $bg-light;
+  color: $color-dark;
 }
 
 .bg-dark {
-  background-color: rgb(18, 29, 35);
-  color: #f7f7f7;
+  background-color: $bg-dark;
+  color: $color-light;
 }
 
 .section-padding {
-  padding: 20px;
+  padding: $padding-div;
 }
 
 /* Mobile */
