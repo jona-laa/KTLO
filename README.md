@@ -29,6 +29,12 @@ Syftet med automatisering är att effektivisera utvecklingsprocessen genom att m
   * Skapar sourcemaps
 * gulp-uglify
   * Minifierar JS-filer
+* merge-stream
+  * Sammanfogar task-streams, i detta fall för att sammanfoga CSS- med SCSS-filer
+* node-sass
+  * Använd sass i node miljö
+* gulp-sass
+  * Använd sass med gulp
 
 ### Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår.
 En simpel koncept-webbplats, skapad med html, css och js.  

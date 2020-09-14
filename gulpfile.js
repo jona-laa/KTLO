@@ -1,4 +1,4 @@
-/* DEPENDENCIES */
+/* ----- DEPENDENCIES ----- */
 const { src, dest, series, parallel, watch } = require('gulp');
 const browserSync = require('browser-sync').create();
 const deleteDist = require('del');
@@ -12,18 +12,22 @@ const htmlmin = require('gulp-htmlmin');
 
 // For CSS tasks
 const cleanCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 
 // Concatenate, minify, sourcemaps
 const concat = require('gulp-concat')
 const imageMin = require('gulp-imagemin');
 const sourceMaps = require('gulp-sourcemaps');
+const mergeStream = require('merge-stream');
 
 
 
-/* FILE PATHS */
+/* ----- FILE PATHS ----- */
 const path = {
   html: 'src/**/*.html',
-  css: 'src/css/*.css',
+  css: 'src/styles/*.css',
+  scss: 'src/styles/*.scss',
   js: 'src/js/*.js',
   images: 'src/images/*',
   dist: 'dist'
@@ -31,7 +35,7 @@ const path = {
 
 
 
-/* TASKS */
+/* ----- TASKS ----- */
 // Deletes dist folder
 const cleanDist = async () => {
   await deleteDist(path.dist);
@@ -44,13 +48,27 @@ const html = async () => {
     .pipe(dest(path.dist))
 }
 
-// CSS Task
-const css = async () => {
-  await src(path.css)
-    .pipe(sourceMaps.init())
+// STYLES Task
+const styles = async () => {
+  // Merge SCSS and CSS
+  await mergeStream(
+    // CSS files
+    await src(path.css)
+      .pipe(sourceMaps.init())
+      .pipe(concat('css-styles.css'))
+      .pipe(sourceMaps.write())
+    ,
+    // SCSS files
+    await src(path.scss)
+      .pipe(sourceMaps.init())
+      .pipe(sass({
+        outputStyle: 'compressed'
+      }))
+      .pipe(concat('scss-styles.scss'))
+      .pipe(sourceMaps.write())
+  )
     .pipe(concat('/css/style.css'))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(sourceMaps.write())
     .pipe(dest(path.dist))
 }
 
@@ -75,7 +93,8 @@ const images = () => {
 // File watch - Reload browser on file changes
 const watcher = async () => {
   await watch(path.html).on('change', series(html, browserSync.reload))
-  await watch(path.css).on('change', series(css, browserSync.reload))
+  await watch(path.css).on('change', series(styles, browserSync.reload))
+  await watch(path.scss).on('change', series(styles, browserSync.reload))
   await watch(path.js).on('change', series(js, browserSync.reload))
 }
 
@@ -91,7 +110,7 @@ const server = async () => {
 
 exports.default = series(
   cleanDist,
-  parallel(html, css, js, images),
+  parallel(html, styles, js, images),
   server,
   watcher
 );
