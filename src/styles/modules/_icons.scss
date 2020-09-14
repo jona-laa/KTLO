@@ -1,26 +1,44 @@
-/* Icons */
-#languages i {
-  background-color: rgb(18, 29, 35);
-  color: #fff;
-  padding: 1.6rem;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  font-size: 3rem;
-}
-
-footer a i {
- color: #fff;
- margin: 0 5px;
-}
-
-i {
-  color: rgb(18, 29, 35);
-}
-
 .icon-link {
-  font-size: 2rem;
+  font-size: $font-XL;
 }
 
-.icon-link:hover {
-  opacity: 0.75;
+/* Social media icons */
+.social i {
+  color: $color-light;
+  margin: 5px;
+}
+
+/* Language icons */
+.react i {
+  color: $react-blue;
+}
+
+.angular i {
+  color: $angular-red;
+}
+
+.vue i {
+  color: $vue-green;
+}
+
+.node i {
+  color: $node-green;
+}
+
+.php i {
+  color: $php-purple;
+}
+
+.python i {
+  color: $python-blue;
+}
+
+#back-end {
+  i {
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .icon-link {
+    font-size: $font-L;
+  }
 }
