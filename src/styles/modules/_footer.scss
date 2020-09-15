@@ -1,14 +1,17 @@
 /* Footer */
 footer {
-  display: flex;
-  flex-direction: column;
+  @include flex();
   justify-content: space-around;
-  min-height: 150px;
+  min-height: 160px;
   padding: $padding-div;
   text-align: center;
 
   a {
     font-size: $font-M;
+
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   small {

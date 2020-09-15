@@ -2,26 +2,26 @@
 .contact-form {
   width: 100%;
   padding: 20px 0;
-}
 
-.contact-form input {
-  width: 100%;
-  padding: 4px;
-  height: 40px;
-  border: #f5f5f5 1px solid;
-  margin: 1px 0;
-}
+  input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+    margin: 1px 0;
 
-.contact-form input:focus {
-  outline-color: rgba(18, 29, 35, 0.2);
-}
+    &:focus {
+      outline-color: rgba(18, 29, 35, 0.2);
+    }
+  }
 
-.contact-form .btn {
-  padding: 12px;
-  margin-top: 20px;
-}
+  .btn {
+    padding: 12px;
+    margin-top: 20px;
+  }
 
-#submit {
-  background-color: rgb(18, 29, 35);
-  color: #f7f7f7;
+  #submit {
+    background-color: $bg-dark;
+    color: $color-light;
+  }
 }

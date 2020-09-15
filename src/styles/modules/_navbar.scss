@@ -58,15 +58,16 @@
         background-color: transparent;
       }
 
-      a {
+      .menu-link {
         color: $color-light;
+        font-size: $font-M;
         padding: 10px 20px;
         margin: 0 5px;
-        font-size: $font-M;
+        text-decoration: none;
 
         &:hover {
-          color: darken($color-light, 99%);
-          border-bottom: $color-light 2px solid;
+          color: darken($color-light, 30%) !important;
+          border-bottom: $color-light 1px solid;
         }
 
         &:visited {
@@ -90,8 +91,8 @@
     @include maxWidth(812px) {
       display: block;
       position: absolute;
-      right: 5px;
-      top: 15px;
+      right: 10px;
+      top: 17px;
     }
   }
 }

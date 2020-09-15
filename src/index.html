@@ -23,18 +23,18 @@
       <nav class="main-menu">
         <a href="" onClick=event.preventDefault() id="main-menu-toggle">
           <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="80" height="10" fill="#f7f7f7"></rect>
-            <rect y="25" width="80" height="10" fill="#f7f7f7"></rect>
-            <rect y="50" width="80" height="10" fill="#f7f7f7"></rect>
+            <rect width="90" height="10" fill="#f7f7f7"></rect>
+            <rect y="30" width="90" height="10" fill="#f7f7f7"></rect>
+            <rect y="60" width="90" height="10" fill="#f7f7f7"></rect>
           </svg>
         </a>
         <ul id="menu-main-menu" class="menu">
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#frameworks">Frameworks</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" target="_blank">LinkedIn</a>
+          <li><a href="#languages" class="menu-link">Languages</a></li>
+          <li><a href="#frameworks" class="menu-link">Frameworks</a></li>
+          <li><a href="#contact" class="menu-link">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/jonathan-laasonen-974aa617a/" class="menu-link" target="_blank">LinkedIn</a>
           </li>
-          <li><a href="https://github.com/jona-laa/" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/jona-laa/" class="menu-link" target="_blank">GitHub</a></li>
         </ul>
       </nav>
     </div>
@@ -42,74 +42,13 @@
     <div class="content">
       <h1>Keep the Lights On</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="#back-end" class="btn bg-light"><i class="fas fa-chevron-right"></i> Read More</a>
+      <a href="#back-end" class="btn bg-light"> Read More</a>
+      <i class="fas fa-chevron-down fa-1x"></i>
     </div>
   </header>
 
   <main>
-    <!-- skillset-1 section - Server-Side Languages -->
-    <section id="back-end" class="section-padding bg-light">
-      <div class="section-header">
-        <h2>Server-Side Languages</h2>
-      </div>
-
-      <div class="row trio">
-        <div>
-          <a href="https://www.php.net/" class="icon-link php" target="_blank">
-            <i class="fab fa-php fa-3x"></i>
-            <h3>PHP</h3>
-          </a>
-          <p>PHP is a popular general-purpose scripting language that is especially suited to web development.</p>
-        </div>
-
-        <div>
-          <a href="https://nodejs.org/en/" class="icon-link node" target="_blank">
-            <i class="fab fa-node-js fa-3x"></i>
-            <h3>Node.js</h3>
-          </a>
-          <p>Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code
-            outside of a
-            browser.</p>
-        </div>
-
-        <div>
-          <a href="https://www.python.org/" class="icon-link python" target="_blank">
-            <i class="fab fa-python fa-3x"></i>
-            <h3>Python</h3>
-          </a>
-          <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
-        </div>
-      </div> <!-- flex-items end -->
-    </section> <!-- languages section end -->
-
-    <!-- pitch-1 section -->
-    <section id="pitch-1" class="bg-dark">
-
-      <div class="row duo">
-        <div class="col">
-          <div class="col-1">
-            <img
-              src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-              alt="">
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="col-2">
-            <span class="pre-header">The best of both worlds</span>
-            <h2>Secure back-end | Beautiful front-end</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa cum omnis
-              laboriosam consectetur
-              dicta doloremque voluptates deleniti officiis iusto beatae delectus soluta, laborum optio ea
-              ad ut
-              provident recusandae?</p>
-          </div> <!-- col-2 end -->
-        </div> <!-- col end  -->
-      </div> <!-- row end -->
-
-    </section> <!-- pitch-1 section end -->
-
-    <!-- skillset-2 section - Front-end Frameworks -->
+    <!-- Front-end -->
     <section id="frameworks" class="section-padding bg-light">
 
       <div class="section-header">
@@ -147,7 +86,69 @@
         </div>
       </div> <!-- flex-items end -->
 
-    </section> <!-- frameworks section end -->
+    </section> <!-- Front-end end-->
+
+    <!-- pitch-1 section -->
+    <section id="pitch-1" class="bg-dark">
+
+      <div class="row duo">
+        <div class="col">
+          <div class="col-1">
+            <img
+              src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+              alt="">
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-2">
+            <span class="pre-header">The best of both worlds</span>
+            <h2>Beautiful front-end | Secure back-end</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa cum omnis
+              laboriosam consectetur
+              dicta doloremque voluptates deleniti officiis iusto beatae delectus soluta, laborum optio ea
+              ad ut
+              provident recusandae?</p>
+          </div> <!-- col-2 end -->
+        </div> <!-- col end  -->
+      </div> <!-- row end -->
+
+    </section> <!-- pitch-1 section end -->
+
+    <!-- Back-end -->
+    <section id="back-end" class="section-padding bg-light">
+      <div class="section-header">
+        <h2>Server-Side Languages</h2>
+      </div>
+
+      <div class="row trio">
+        <div>
+          <a href="https://www.php.net/" class="icon-link php" target="_blank">
+            <i class="fab fa-php fa-3x"></i>
+            <h3>PHP</h3>
+          </a>
+          <p>PHP is a popular general-purpose scripting language that is especially suited to web development.</p>
+        </div>
+
+        <div>
+          <a href="https://nodejs.org/en/" class="icon-link node" target="_blank">
+            <i class="fab fa-node-js fa-3x"></i>
+            <h3>Node.js</h3>
+          </a>
+          <p>Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code
+            outside of a
+            browser.</p>
+        </div>
+
+        <div>
+          <a href="https://www.python.org/" class="icon-link python" target="_blank">
+            <i class="fab fa-python fa-3x"></i>
+            <h3>Python</h3>
+          </a>
+          <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
+        </div>
+      </div> <!-- flex-items end -->
+    </section> <!-- Back-end end -->
 
     <!-- Contact -->
     <section id="contact">

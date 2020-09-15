@@ -11,16 +11,15 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 20px;
+    padding: $padding-div;
 
     h1 {
       text-align: center;
     }
 
     p {
-      font-size: 23px;
-      max-width: 600px;
-      margin: 20px 0 30px;
+      font-size: $font-XL;
+      margin: 20px 0;
       text-align: center;
     }
   }

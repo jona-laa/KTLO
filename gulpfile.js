@@ -63,7 +63,7 @@ const styles = async () => {
       .pipe(sourceMaps.init())
       .pipe(sass({
         outputStyle: 'compressed'
-      }))
+      }).on('error', sass.logError))
       .pipe(concat('scss-styles.scss'))
       .pipe(sourceMaps.write())
   )
