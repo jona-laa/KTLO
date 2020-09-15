@@ -4,12 +4,16 @@ $('#main-menu-toggle').click(function () {
   });
 });
 
-
+window.onscroll = function () {
+  hideMainMenu();
+  hideToTopBtn();
+}
 
 // Hide Header on on scroll down
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+const hideMainMenu = () => {
   var currentScrollPos = window.pageYOffset;
+
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
     $('.main-menu ul').css('display', 'none')
@@ -17,5 +21,14 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "-125px";
     $('.main-menu ul').css('display', 'none')
   }
+
   prevScrollpos = currentScrollPos;
+}
+
+// Hide "go to top button" if scrolled down more than window height
+const hideToTopBtn = () => {
+  window.pageYOffset > window.screen.height ?
+    document.getElementById("goTop").style.bottom = "10px"
+    :
+    document.getElementById("goTop").style.bottom = "-50px";
 }

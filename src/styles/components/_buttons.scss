@@ -1,9 +1,7 @@
 /* Buttons */
 .btn {
-  background-color: #f7f7f7;
   border-radius: 5px;
   cursor: pointer;
-  color: #333;
   display: inline-block;
   font-size: 1.6rem;
   padding: 10px 30px;
@@ -19,11 +17,12 @@
   @extend .btn;
   background: #003458;
   border: 0.5px solid #004577;
-  bottom: 10px;
+  // bottom: 10px;
   height: 45px;
   padding: 0 1.2em;
   position: fixed;
   right: 10px;
+  transition: 0.5s ease-in;
   width: 45px;
 
   &:hover polyline {

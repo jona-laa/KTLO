@@ -11,7 +11,7 @@
     margin: 1px 0;
 
     &:focus {
-      outline-color: rgba(18, 29, 35, 0.2);
+      outline-color: lighten($darkblue, 80%)
     }
   }
 
@@ -21,7 +21,6 @@
   }
 
   #submit {
-    background-color: $bg-dark;
-    color: $color-light;
+    @include light-theme(false);
   }
 }
