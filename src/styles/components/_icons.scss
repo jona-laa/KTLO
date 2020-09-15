@@ -9,17 +9,18 @@
 }
 
 /* Language icons */
-$icon-colors:
-"react" $react-blue,
-"angular" $angular-red,
-"vue" $vue-green,
-"node" $node-green,
-"php" $php-purple,
-"python" $python-yellow;
+$icon-colors: (
+  react: $react-blue,
+  angular: $angular-red,
+  vue: $vue-green,
+  node: $node-green,
+  php: $php-purple,
+  python: $python-yellow
+);
 
-@each $name, $color in $icon-colors {
-	.#{$name} i {
-		color: $color;
+@each $key, $value in $icon-colors {
+	.#{$key} i {
+		color: $value;
 	}
 }
 
