@@ -9,28 +9,18 @@
 }
 
 /* Language icons */
-.react i {
-  color: $react-blue;
-}
+$icon-colors:
+"react" $react-blue,
+"angular" $angular-red,
+"vue" $vue-green,
+"node" $node-green,
+"php" $php-purple,
+"python" $python-yellow;
 
-.angular i {
-  color: $angular-red;
-}
-
-.vue i {
-  color: $vue-green;
-}
-
-.node i {
-  color: $node-green;
-}
-
-.php i {
-  color: $php-purple;
-}
-
-.python i {
-  color: $python-blue;
+@each $name, $color in $icon-colors {
+	.#{$name} i {
+		color: $color;
+	}
 }
 
 #back-end {

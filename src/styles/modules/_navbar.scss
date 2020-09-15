@@ -21,6 +21,17 @@
     height: 70px;
   }
 
+  /* Logo */
+  .logo {
+    font-weight: 200;
+    font-family: $font-logo;
+    font-size: 3.2rem;
+
+    .logo-font_small {
+      font-size: 2.6rem;
+    }
+  }
+
   /* Menu */
   .main-menu {
     @include maxWidth(812px) {
@@ -70,17 +81,6 @@
           line-height: 3.8rem;
         }
       }
-    }
-  }
-
-  /* Logo */
-  .logo {
-    font-weight: 200;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3.2rem;
-
-    .logo-font_small {
-      font-size: 2.6rem;
     }
   }
 

@@ -1,67 +1,55 @@
-/*  Flex Items */
-.flex-items {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+.row {
+  @include flex(row, wrap);
 }
 
-.flex-items div {
-  width: 33%;
-}
-
-.flex-items > div {
-  padding: 20px;
-}
-
-/* Flex Columns */
-.flex-columns .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.flex-columns .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+.col {
   flex: 1;
+
+  @include maxWidth(900px) {
+    flex: 100%;
+  }
 }
 
-.flex-columns .column .column-1,
-.flex-columns .column .column-2 {
-  height: 100%;
+/*  Flex Rows */
+/* Double col */
+.duo {
+  .col-1,
+  .col-2 {
+    height: 100%;
+  }
+
+  .col-1 img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .col-2 {
+    @include flex();
+    justify-content: center;
+    padding: 30px;
+  }
 }
 
-.flex-columns img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* Triple col */
+.trio {
+  text-align: center;
+
+  div {
+    padding: $padding-div;
+    width: 33%;
+
+    @include maxWidth(900px) {
+      width: 100%;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 10px auto;
+    }
+  }
 }
 
-.flex-columns .column-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 30px;
-}
-
-/* Flex grid */
-.flex-grid .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.flex-items img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Background/Text sets */
+/* Background/Text Colors */
 .bg-light {
   background: $bg-light;
   color: $color-dark;
@@ -74,21 +62,4 @@
 
 .section-padding {
   padding: $padding-div;
-}
-
-/* Mobile */
-@media only screen and (max-width: 900px) {
-  .flex-items {
-    flex-direction: column;
-  }
-
-  .flex-items div {
-    width: 100%;
-  }
-
-  .flex-columns .column,
-  .flex-grid .column {
-    flex: 100%;
-    max-width: 100%;
-  }
 }

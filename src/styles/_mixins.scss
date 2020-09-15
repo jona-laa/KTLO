@@ -10,3 +10,9 @@
     @content;
   }
 }
+
+@mixin flex($dir: column, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+}
