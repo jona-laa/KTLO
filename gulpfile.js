@@ -30,7 +30,7 @@ const path = {
   scss: 'src/styles/**/*.scss',
   js: 'src/js/*.js',
   images: 'src/images/*',
-  dist: 'dist'
+  dist: 'docs'
 }
 
 
