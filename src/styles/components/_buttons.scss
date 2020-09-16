@@ -3,7 +3,7 @@
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: $font-M;
   padding: 10px 30px;
   text-decoration: none;
 
@@ -17,7 +17,6 @@
   @extend .btn;
   background: #003458;
   border: 0.5px solid #004577;
-  // bottom: 10px;
   height: 45px;
   padding: 0 1.2em;
   position: fixed;
