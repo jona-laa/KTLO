@@ -1,4 +1,4 @@
-# Moment 2 - NodeJS & Gulp
+# Moment 3 - NodeJS, Gulp, Sass
 
 ### Vad är automatiseringsprocessens syfte?
 Syftet med automatisering är att effektivisera utvecklingsprocessen genom att med hjälp av script automatisera bort repetativa moment som tenderar att vara tidskonsumerande, t.ex:
