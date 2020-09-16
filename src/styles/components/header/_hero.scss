@@ -5,6 +5,10 @@
   position: relative;
   color: $color-light;
 
+  @include maxWidth(500px) {
+    background: url('../images/KTLO.jpg') no-repeat 60% center/cover;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
