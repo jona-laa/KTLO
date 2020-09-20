@@ -21,6 +21,14 @@
     height: 70px;
   }
 
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: $color-light;
+    }
+  }
+
   /* Logo */
   .logo {
     font-weight: 200;
